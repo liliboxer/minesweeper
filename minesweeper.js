@@ -1,6 +1,18 @@
-const blankline = '  |   |  ';
+let printBoard = board => {
+  console.log('Current Board:');
+  console.log(board[0].join(' | '));
+  console.log(board[1].join(' | '));
+  console.log(board[2].join(' | '));
+};
 
-console.log('This is what an empty board would look like: ');
-console.log(blankline);
-console.log(blankline);
-console.log(blankline);
+const board = [
+  [' ', ' ', ' '],
+  [' ', ' ', ' '],
+  [' ', ' ', ' '],
+];
+
+printBoard(board);
+board[0][1] = '1';
+board[2][2] = 'B';
+
+printBoard(board);
