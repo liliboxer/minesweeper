@@ -1,7 +1,7 @@
-let generatePlayerBoard = (numberOfRows, numberOfColumns) => {
-  let board = [];
+const generatePlayerBoard = (numberOfRows, numberOfColumns) => {
+  const board = [];
   for (let i = 0; i < numberOfRows; i++) { // why don't you need .length
-    let row = [];
+    const row = [];
     for (let j = 0; j < numberOfColumns; j++) {
       row.push(' ');
     };
