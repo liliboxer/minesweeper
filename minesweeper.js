@@ -30,10 +30,12 @@ const generateBombBoard = (numberOfRows, numberOfColumns, numberOfBombs) => {
     board[randomRowIndex][randomColumnIndex] = 'B';
     numberOfBombsPlaced ++;
   };
-
-
-
-
-
   return board;
+};
+
+
+// printBoard function //
+
+const printBoard = board => {
+  console.log(board.map(row => row.join(' | ').join(''\n''))); // don't understand syntax for thsi callback function
 };
